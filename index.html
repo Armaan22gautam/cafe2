@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        button {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+.jumbotron {
+  background-image: url(https://wallpapercave.com/wp/wp2352816.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+.jumbotron-fluid .lead, .jumbotron-fluid .display-4 {
+    color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="data:image/png;base64,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" alt="Logo" width="150">
+        </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">  
+                    <a href="index.html" class="btn"><button>Home</button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="btn"><button>Menu</button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="btn"><button>Contact Us</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="jumbotron jumbotron-fluid" style="background-image: url(https://img.freepik.com/premium-photo/cup-coffee-wooden-table-cafe_170984-8718.jpg); background-size: cover; background-position: center; ">
+        <div class="box-shadow">
+            <center><h1 class="display-4">Kings Cafe</h1>
+                <p class="lead">Welcome to Our Cafe!</p>
+                <p class="lead">Come and enjoy our delicious coffee and treats!</p></center>
+        </div>
+    </div>
+
+    <div class="container">
+        
+            <div class="row">
+                <h2>Our Story</h2>
+                <p> Kings Cafe  could be a place where special moments and deep connections are experienced, as suggested by the word "retrouvailles" which captures the happiness of meeting someone very dear after a long time. It's about those mundane moments of real human connection, where time seems to stop. The cafe might be a setting for various stories of reunion, emotional conversations, and even bittersweet memories.
+                    In one story, a person reconnects with their best friend after a long time apart, spending an entire day lounging and sharing their emotions. In another story, a person finds comfort in the company of their soul sister after a heartbreaking experience. These moments at Cafe Retrouvailles become timeless, creating a strong bond between the characters.
+                    In a different context, Cafe Retrouvailles might be a place where people rediscover themselves and their own strength after a long period of struggle. A friend's visit can help someone adjust to a new life, providing comfort and support during the transition.
+                    Ultimately, Cafe Retrouvailles is a place where people experience meaningful connections, growth, and heartfelt moments, making it more than just a coffee shop.</p>
+            </div>        
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+<footer>
+    <p align="center">&copy; 2024 All rights reserved.  Contact : armaangautam001@gmail.com</p>
+    <br>
+    <div>
+      <p align="center">&copy; 2024 All rights reserved.  Contact : armaangautam001@gmail.com</p>
+      <br>
+      <ul style="margin-left: -2px;"><a href="index.html">
+        Home&ensp; </a><a href="contact.html"> Contact&ensp; </a> <a href="signup.html">Signup&ensp;</a><a href="login.html"> Login&ensp;</a>
+        </div>
+  </footer>
+</html>
